@@ -1,0 +1,23 @@
+sudo: required
+
+language: python
+
+services:
+  - docker
+
+python: 3.6
+
+before_install:
+  - docker --version
+
+script:
+  - pytest
+
+install:
+  - pip install pipenv
+  - pipenv install --dev --system
+
+notifications:
+  email:
+    on_success: change
+    on_failure: always

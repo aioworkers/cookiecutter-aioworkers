@@ -1,0 +1,6 @@
+{
+  "project_name": "Project Name",
+  "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_') }}",
+  "docker": "y",
+  "worker_example": "n"
+}

@@ -1,0 +1,9 @@
+{% if cookiecutter.worker_example == 'y' %}
+worker_example:
+  cls: aioworkers.worker.base.Worker
+  run: worker.run
+  sleep_start: 3
+  autorun: true
+  persist: true
+  sleep: 1
+{% endif %}
