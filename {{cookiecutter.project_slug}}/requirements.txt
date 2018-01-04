@@ -1,2 +1,3 @@
 aioworkers
 pyyaml
+{% if cookiecutter.aiohttp == 'y' %}aioworkers-aiohttp{% endif %}

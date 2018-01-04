@@ -7,3 +7,7 @@ if '{{ cookiecutter.worker_example }}'.lower() == 'n':
 
 if '{{ cookiecutter.docker }}'.lower() == 'n':
     (PROJECT_PATH / 'Dockerfile').unlink()
+
+
+if '{{ cookiecutter.aiohttp }}'.lower() == 'n':
+    (PROJECT_PATH / 'web.py').unlink()
