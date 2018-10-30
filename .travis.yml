@@ -15,7 +15,7 @@ script:
 
 install:
   - pip install pipenv
-  - pipenv install --dev --system
+  - pipenv install --dev --system --
 
 notifications:
   email:
